@@ -1,4 +1,8 @@
+# Diagrama UML - CanecaoSemApagao
+
+````mermaid
 classDiagram
+
     class Usuario {
         -int id
         -String nome
@@ -38,3 +42,6 @@ classDiagram
     Usuario "1" --> "0..*" Ocorrencia : registra
     Gestor "1" --> "0..*" Ocorrencia : gerencia
     OcorrenciaDAO ..> Ocorrencia : acessa dados
+
+
+**Importante:** mantenha as três crases antes de `mermaid` e depois do diagrama. Elas são necessárias para o GitHub reconhecer o desenho.
