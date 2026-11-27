@@ -35,7 +35,7 @@ public class Gestor {
     }
 
     void analisarOcorrencias () {
-
+        return null;
     }
 
     void analisarStatus () {
