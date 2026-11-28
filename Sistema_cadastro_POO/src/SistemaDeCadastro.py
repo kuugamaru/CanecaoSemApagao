@@ -4,11 +4,14 @@ class SistemaDeCadastro:
     def __init__(self):
         self.__pessoas = []
 
-    def cadastrarPessoa(self, pessoa) -> None:
+    def adicionarPessoa(self, pessoa) -> None:
         self.__pessoas.append(pessoa)
         print("Pessoa cadastrada com sucesso!")
 
-    def Listar(self) -> None:
+    def cadastrarPessoa(self, pessoa) -> None:
+        self.adicionarPessoa(pessoa)
+
+    def listarPessoas(self) -> None:
         if not self.__pessoas:
             print("Nenhuma pessoa cadastrada.")
             return
@@ -17,35 +20,41 @@ class SistemaDeCadastro:
             print("--------------------")
             pessoa.SeApresentar()
 
-    def buscarPorNome(self, nome: str):
-        encontrados = []
+    def Listar(self) -> None:
+        self.listarPessoas()
 
+    def buscarPessoaPorNome(self, nome: str):
         for pessoa in self.__pessoas:
             if pessoa.getNome().lower() == nome.lower():
-                encontrados.append(pessoa)
+                return pessoa
 
-        if encontrados:
-            for pessoa in encontrados:
-                print("--------------------")
-                pessoa.SeApresentar()
-            return encontrados
+        return None
 
-        print("Pessoa não encontrada.")
-        return []
+    def buscarPorNome(self, nome: str):
+        pessoa = self.buscarPessoaPorNome(nome)
+
+        if pessoa:
+            pessoa.SeApresentar()
+        else:
+            print("Pessoa não encontrada.")
+
+        return pessoa
 
     def buscarPorMatricula(self, matricula: str):
-        encontrados = []
-
         for pessoa in self.__pessoas:
             if hasattr(pessoa, "getMatricula"):
                 if pessoa.getMatricula() == matricula:
-                    encontrados.append(pessoa)
-
-        if encontrados:
-            for pessoa in encontrados:
-                print("--------------------")
-                pessoa.SeApresentar()
-            return encontrados
+                    pessoa.SeApresentar()
+                    return pessoa
 
         print("Matrícula não encontrada.")
-        return []
+        return None
+
+    def removerPessoa(self, pessoa) -> bool:
+        if pessoa in self.__pessoas:
+            self.__pessoas.remove(pessoa)
+            print("Pessoa removida com sucesso!")
+            return True
+
+        print("Pessoa não encontrada.")
+        return False
