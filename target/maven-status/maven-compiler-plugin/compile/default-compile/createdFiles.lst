@@ -1,6 +1,8 @@
-Gestor.class
-Ocorrencia.class
-OcorrenciaDAO.class
+models\Ocorrencia.class
 main.class
-Usuario.class
+dao\GestorDAO.class
 database\ConexaoBanco.class
+models\Gestor.class
+dao\OcorrenciaDAO.class
+dao\UsuarioDAO.class
+models\Usuario.class
