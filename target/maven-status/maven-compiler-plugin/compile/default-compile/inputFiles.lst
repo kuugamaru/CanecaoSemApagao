@@ -1,6 +1,8 @@
-C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\ConexaoBanco.java
-C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\Gestor.java
-C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\main.java
-C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\Ocorrencia.java
-C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\OcorrenciaDAO.java
-C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\Usuario.java
+C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\src\main\java\dao\GestorDAO.java
+C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\src\main\java\dao\OcorrenciaDAO.java
+C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\src\main\java\dao\UsuarioDAO.java
+C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\src\main\java\database\ConexaoBanco.java
+C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\src\main\java\main.java
+C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\src\main\java\models\Gestor.java
+C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\src\main\java\models\Ocorrencia.java
+C:\Users\Lenovo\Documents\GitHub\ProjetoIntegrador\CanecaoSemApagao\src\main\java\models\Usuario.java
