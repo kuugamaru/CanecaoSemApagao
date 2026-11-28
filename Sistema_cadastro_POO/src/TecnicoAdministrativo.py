@@ -4,16 +4,9 @@ from .pessoa import Pessoa
 
 class TecnicoAdministrativo(Pessoa):
 
-    def __init__(self, nome: str, idade: int, altura: float, matricula: str, setor: str):
+    def __init__(self, nome: str, idade: int, altura: float, setor: str):
         super().__init__(nome, idade, altura)
-        self.__matricula = matricula
         self.__setor = setor
-
-    def getMatricula(self) -> str:
-        return self.__matricula
-
-    def setMatricula(self, matricula: str) -> None:
-        self.__matricula = matricula
 
     def getSetor(self) -> str:
         return self.__setor
@@ -23,6 +16,5 @@ class TecnicoAdministrativo(Pessoa):
 
     def SeApresentar(self) -> None:
         super().SeApresentar()
-        print(f"Matrícula: {self.__matricula}")
         print(f"Setor: {self.__setor}")
         print("Tipo: Técnico Administrativo")
