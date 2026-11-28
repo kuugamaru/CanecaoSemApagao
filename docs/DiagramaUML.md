@@ -35,9 +35,9 @@ class Gestor {
 }
 
 class OcorrenciaDAO {
-    +cadastrar()
-    +consultar()
-    +atualizar()
+    +cadastrar(ocorrencia) int
+    +consultar() List~Ocorrencia~
+    +atualizar(ocorrencia) boolean
 }
 
 Usuario "1" --> "0..*" Ocorrencia : registra

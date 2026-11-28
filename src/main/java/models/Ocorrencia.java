@@ -1,3 +1,5 @@
+package models;
+
 public class Ocorrencia {
     private int id;
     private String descricao;
